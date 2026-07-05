@@ -4,6 +4,7 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+  base: '/Fee-collection-new-admission/',
   return {
     plugins: [react(), tailwindcss()],
     resolve: {
