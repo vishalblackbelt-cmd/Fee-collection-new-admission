@@ -1,0 +1,6 @@
+{
+  "name": "The Shotokan Karate Academy",
+  "description": "Official Admission and UPI Fee Payment checkout portal for The Shotokan Karate Academy (Zenshin Dojo), New Delhi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
