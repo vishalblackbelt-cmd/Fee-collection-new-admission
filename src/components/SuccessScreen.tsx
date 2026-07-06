@@ -13,10 +13,7 @@ interface SuccessScreenProps {
 
 export default function SuccessScreen({ formData, onReset, showToast }: SuccessScreenProps) {
   // Generate random application reference code
-  const refNumberRef = useRef<string>(() => {
-    const randomNum = Math.floor(1000 + Math.random() * 9000);
-    return `TSKA-2026-${randomNum}`;
-  });
+  const refNumberRef = useRef<string>(`TSKA-2026-${Math.floor(1000 + Math.random() * 9000)}`);
 
   const handlePrint = () => {
     window.print();
