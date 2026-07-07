@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: process.env.GITHUB_ACTIONS ? '/Fee-collection-new-admission/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
