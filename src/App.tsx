@@ -335,50 +335,6 @@ export default function App() {
         </p>
       </footer>
 
-      {/* FLOATING QUICK SANDBOX TESTING BAR (DIRECTIVE SPECIFIC) */}
-      <div className="fixed bottom-4 left-4 z-40 no-print flex flex-col gap-2">
-        <div className="bg-zinc-950/95 border border-dojo-border/80 px-4 py-3.5 rounded-2xl shadow-2xl flex flex-col gap-2.5 max-w-[280px]">
-          <div className="flex items-center gap-2 border-b border-dojo-border/40 pb-1.5">
-            <Sparkles className="text-dojo-gold w-4 h-4" />
-            <span className="text-[10px] font-black uppercase tracking-wider text-dojo-white">
-              Instant Simulator controls
-            </span>
-          </div>
-
-          <div className="flex flex-col gap-1.5">
-            {/* Control 1: Instantly populate form for testing */}
-            <button
-              onClick={handlePrefillTestData}
-              className="flex items-center justify-between bg-zinc-900 hover:bg-zinc-800 border border-dojo-border px-3 py-1.5 rounded-lg text-[9px] font-bold uppercase tracking-wider text-dojo-light-gray transition-all cursor-pointer"
-              title="Pre-fills form values"
-            >
-              <span>1. Pre-fill Form</span>
-              <Check className="w-3 h-3 text-emerald-400" />
-            </button>
-
-            {/* Control 2: Bypass Form step instantly to test payment links */}
-            <button
-              onClick={handleSkipToCheckout}
-              className="flex items-center justify-between bg-zinc-900 hover:bg-zinc-800 border border-dojo-border px-3 py-1.5 rounded-lg text-[9px] font-bold uppercase tracking-wider text-dojo-light-gray transition-all cursor-pointer"
-              title="Fast forwards directly to payment view"
-            >
-              <span>2. Skip to Payment</span>
-              <Zap className="w-3 h-3 text-purple-400" />
-            </button>
-
-            {/* Control 3: Simulate redirect instantly */}
-            <button
-              onClick={handleBypassToCertificate}
-              className="flex items-center justify-between bg-zinc-900 hover:bg-zinc-800 border border-dojo-border px-3 py-1.5 rounded-lg text-[9px] font-bold uppercase tracking-wider text-dojo-light-gray transition-all cursor-pointer"
-              title="Bypasses both steps and redirects to confirmation view"
-            >
-              <span>3. Mock success</span>
-              <RefreshCw className="w-3 h-3 text-dojo-gold" />
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </div>
+     </div>
   );
 }
